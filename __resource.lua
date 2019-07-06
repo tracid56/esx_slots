@@ -31,7 +31,7 @@ files {
   'html/audio/changeBet.wav',
   'html/audio/collect.wav',
   'html/audio/pornestePacanele.wav',
-  'html/audio/selnvarte.wav',
+  'html/audio/seInvarte.wav',
   'html/audio/winDouble.wav',
   'html/audio/winLine.wav'
 }
