@@ -27,6 +27,9 @@ Citizen.CreateThread(function()
     end
 end)
 
+-------------------------------------------------------------------------------
+-- FUNCTIONS
+-------------------------------------------------------------------------------
 local function drawHint(text)
 	SetTextComponentFormat("STRING")
 	AddTextComponentString(text)
@@ -67,6 +70,9 @@ function KeyboardInput(textEntry, inputText, maxLength)
     end
 end
 
+-------------------------------------------------------------------------------
+-- NET EVENTS
+-------------------------------------------------------------------------------
 RegisterNetEvent("esx_slots:enterBets")
 AddEventHandler("esx_slots:enterBets", function ()
     local bets = KeyboardInput("Enter bet value:", "", 4)
@@ -87,6 +93,9 @@ AddEventHandler("esx_slots:UpdateSlots", function(lei)
 	})
 end)
 
+-------------------------------------------------------------------------------
+-- NUI CALLBACKS
+-------------------------------------------------------------------------------
 RegisterNUICallback('exitWith', function(data, cb)
 	cb('ok')
 	SetNuiFocus(false, false)
@@ -94,6 +103,9 @@ RegisterNUICallback('exitWith', function(data, cb)
 	TriggerServerEvent("esx_slots:PayOutRewards", data.coinAmount)
 end)
 
+-------------------------------------------------------------------------------
+-- THREADS
+-------------------------------------------------------------------------------
 Citizen.CreateThread(function ()
 	SetNuiFocus(false, false)
 	open = false

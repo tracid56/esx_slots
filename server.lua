@@ -6,7 +6,6 @@
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-
 RegisterServerEvent("esx_slots:BetsAndMoney")
 AddEventHandler("esx_slots:BetsAndMoney", function(bets)
     local _source   = source
