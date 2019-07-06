@@ -14,7 +14,7 @@ AddEventHandler("esx_slots:BetsAndMoney", function(bets)
         if bets % 50 == 0 and bets >= 50 then
             if xPlayer.getMoney() >= bets then
                 xPlayer.removeMoney(bets)
-                TriggerClientEvent("esx_slots:UpdateSlots", source, bets)
+                TriggerClientEvent("esx_slots:UpdateSlots", _source, bets)
             else
                 TriggerClientEvent('esx:showNotification', _source, "Not enought money")
             end
