@@ -1,6 +1,7 @@
 -- This resource was made by plesalex100#7387
 -- Please respect it, don't repost it without my permission
 -- This Resource started from: https://codepen.io/AdrianSandu/pen/MyBQYz
+-- ESX Version: saNhje & wUNDER
 
 Config = {}
 Config.blipsEnabled = true
