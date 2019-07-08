@@ -75,7 +75,7 @@ end
 -------------------------------------------------------------------------------
 RegisterNetEvent("esx_slots:enterBets")
 AddEventHandler("esx_slots:enterBets", function ()
-    local bets = KeyboardInput("Enter bet value:", "", 4)
+    local bets = KeyboardInput("Enter bet value:", "", Config.MaxBetNumbers)
     if tonumber(bets) ~= nil then
     	TriggerServerEvent('esx_slots:BetsAndMoney', tonumber(bets))
     else
